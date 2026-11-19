@@ -1,0 +1,6 @@
+id,mode,evidence,implication
+F1,scale collapse / along-track drift,"ORB 0.052, MonoGS 0.090, GigaSLAM 0.842 mileage on 1.2",report SE(3) + mileage; Sim(3) only with scale gate
+F2,corridor degeneracy,LIVO-GS ATE 300.95/1354.87/1703.85 cm; 96-98% along track,inspect along/cross decomposition
+F3,initialization/frame accounting,"FAST-LIO2 88/100, FAST-LIVO2 68/100 (rerun 69/100); 5.1 84/67; index matching 76 vs 8.98 cm",match by timestamp
+F4,rendering-localization decoupling,"GigaSLAM 5.1 PSNR 19.84, ATE 469.95 cm",separate dense/localization tables
+F5,semantic-source substitution,"official vs YOLO: ATE 1.84/1.89, cross-official mIoU 0.6427/0.3662",report semantic source

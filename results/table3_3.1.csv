@@ -1,0 +1,10 @@
+﻿method,modality,ate_se3_cm,sim3_cm,s_star,psnr,miou,mileage_ratio,frames
+KISS-ICP,L,6.53,1.48,1.0,,,1.0028,100
+GenZ-ICP,L,7.21,1.91,1.0,,,1.0035,100
+FAST-LIVO2,L+I+V,9.06,6.51,1.0,,,0.9833,68
+FAST-LIO2,L+I,16.62,10.62,0.99,,,1.0089,83
+Ours v11 (INS),L+I+V+sem,5.45,5.40,1.0,18.86,0.3559,1.0002,100
+ORB-SLAM3,mono,1933.37,1.21,30.67,,,0.0326,33
+MonoGS,mono/GS,1920.36,264.69,44.98,19.03,,0.0221,27
+GigaSLAM,mono/GS,1149.92,478.58,2.16,20.69,,0.401,8
+SGS-SLAM official,RGB-D/GS,529.97,334.97,1.28,17.22,,0.7231,100

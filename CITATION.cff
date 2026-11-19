@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Evaluating SLAM on OSDaR23: A Reproducible Protocol and Empirical Observations"
+authors:
+  - family-names: Gan
+    given-names: Hai-Chuan
+  - family-names: Tao
+    given-names: Dan
+year: 2026
+repository-code: "https://github.com/Cenvoil/osdar23-slam-eval"
+license: MIT
