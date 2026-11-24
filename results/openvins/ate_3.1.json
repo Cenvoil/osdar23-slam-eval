@@ -1,0 +1,29 @@
+{
+  "method": "",
+  "method_version": "",
+  "dataset": "",
+  "sequence": "",
+  "n_frames_aligned": 75,
+  "n_frames_gt": 100,
+  "alignment": "se3",
+  "aggregation": "mean",
+  "traj_repr": "camcenter",
+  "ate_cm": 1471.4218,
+  "ate_rmse_cm": 1678.8919,
+  "ate_max_cm": 2947.409,
+  "ate_sim3_mean_cm": 1036.1637,
+  "ate_sim3_rmse_cm": 1214.2777,
+  "sim3_scale": 5.629854,
+  "odom_gt_m": 63.529,
+  "odom_est_m": 11.098,
+  "timestamp_match": {
+    "max_dt_s": 0.02,
+    "matched": 75,
+    "dt_median_ms": 0.0,
+    "dt_max_ms": 0.0
+  },
+  "comparable_with_project": true,
+  "runtime_s": null,
+  "notes": "",
+  "date": "2026-11-24"
+}

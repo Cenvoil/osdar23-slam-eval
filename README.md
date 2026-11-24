@@ -18,7 +18,9 @@ python rpe_eval.py --gt reference.tum --est estimate.tum
 ```
 
 `eval_ate.py` reports SE(3)/Sim(3), mean/RMSE, and w2c-t/camera-center. The paper's
-main numbers use Horn SE(3), mean, and w2c-t.
+main numbers use Horn SE(3), mean, and **camera-center**; w2c-t values are kept only
+for the per-frame error profiles. Earlier releases (v1.0) described the main tables
+as w2c-t; v1.1 corrects this and updates FAST-LIO2 on 5.1 from 8.49 to 9.85 cm.
 
 ## Layout
 
@@ -27,7 +29,17 @@ main numbers use Horn SE(3), mean, and w2c-t.
 - `protocol_ATE_Sim3.md`, `protocol_RPE.md` — protocol definitions.
 - `method_definition.md` — the system/evaluation conventions.
 - `results/` — CSV versions of Tables 2–5 and the failure-mode table.
+- `results/openvins/` — OpenVINS trajectories and metrics (Appendix F).
+- `openvins/` — OpenVINS configuration, player, and run script.
 - `make_failure_figure.py` — failure-evidence figure script.
+
+## Version
+
+- **v1.1 (2026-11-24)** — Point-LIO rows added to Tables 2–5; FAST-LIO2 on 5.1
+  changed from 8.49 to 9.85 cm (camera-center); F5 evidence updated to the
+  same-rasterizer control (1.85/1.89 cm, 21.55/21.60 dB, mIoU 0.6410/0.3662);
+  OpenVINS visual-inertial probe added (Appendix F, results and code).
+- v1.0 (2026-11-19) — initial release.
 
 ## Data
 
